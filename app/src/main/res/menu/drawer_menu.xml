@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_1"
+            android:icon="@drawable/information_outline"
+            android:title="O akci"
+            />
+        <item android:id="@+id/nav_2"
+            android:icon="@drawable/artist_outline"
+            android:title="Lineup"
+            />
+        <item android:id="@+id/nav_3"
+            android:icon="@drawable/map_marker"
+            android:title="Místa"
+            />
+        <item android:id="@+id/nav_4"
+            android:icon="@drawable/account_group_outline"
+            android:title="Přátele"
+            />
+        <item android:id="@+id/nav_5"
+            android:icon="@drawable/ticket"
+            android:title="Vstupenka"
+            />
+    </group>
+
+</menu>

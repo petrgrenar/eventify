@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="prymaryBlue">#2BA3EF</color>
+    <color name="prymaryDarkBlue">#2685C1</color>
+    <color name="white">#ffffff</color>
+    <color name="none">#00ffffff</color>
+
+    <color name="main_BG">#262626</color>
+    <color name="main_BG_transparent">#99262626</color>
+    <color name="minifab_pressed">#99ffffff</color>
+    <color name="black_semi_transparent">#B2000000</color>
+</resources>

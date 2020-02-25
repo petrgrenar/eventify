@@ -1,0 +1,17 @@
+
+  [
+    {
+      "name": "Rocky Balboa",
+      "latitude": 10.0,
+      "longitude": 10.0,
+      "image": "rocky"
+
+    },
+    {
+      "name": "Arnold Schwarzenegger",
+      "latitude": 20.0,
+      "longitude": 20.0,
+      "image": "arnold"
+    }
+  ]
+  

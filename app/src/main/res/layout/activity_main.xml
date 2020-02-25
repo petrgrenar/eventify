@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/content_main" />
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            app:fab_addButtonColorNormal="@color/prymaryBlue"
+            app:fab_addButtonColorPressed="@color/prymaryDarkBlue"
+            app:fab_labelStyle="@style/custom_fab">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/findplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/prymaryBlue"
+                app:fab_colorPressed="@color/prymaryDarkBlue"
+                app:fab_icon="@drawable/map_marker"
+                app:fab_size="mini"
+                app:fab_title="@string/findplace" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/findfriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/prymaryBlue"
+                app:fab_colorPressed="@color/prymaryDarkBlue"
+                app:fab_icon="@drawable/account_search_white"
+                app:fab_size="mini"
+                app:fab_title="@string/findfriend" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/bigbrother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/prymaryBlue"
+                app:fab_colorPressed="@color/prymaryDarkBlue"
+                app:fab_icon="@drawable/eye_white"
+                app:fab_size="mini"
+                app:fab_title="@string/bigbrother" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/cctv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/prymaryBlue"
+                app:fab_colorPressed="@color/prymaryDarkBlue"
+                app:fab_icon="@drawable/cctv_white"
+                app:fab_size="mini"
+                app:fab_title="@string/cctv" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_centerme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            app:fab_colorPressed="@color/prymaryDarkBlue"
+            app:fab_icon="@drawable/crosshairs_gps_white"
+            app:rippleColor="@color/prymaryBlue" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_hamburger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            app:fab_colorPressed="@color/prymaryDarkBlue"
+            app:fab_icon="@drawable/menu_white"
+            app:rippleColor="@color/prymaryBlue" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        android:background="@color/main_BG">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/logout_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/logout"
+                android:background="@color/main_BG"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:text="Log out"/>
+
+            <!--<android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/logout" />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Log out" />-->
+        </RelativeLayout>
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
